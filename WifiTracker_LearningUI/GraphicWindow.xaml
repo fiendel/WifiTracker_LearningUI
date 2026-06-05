@@ -1,0 +1,21 @@
+﻿<Window x:Class="WifiRadar.GraphWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Signal Graph"
+        Height="420"
+        Width="720"
+        Background="#0B0F14">
+
+    <Grid>
+        <Canvas Name="GraphCanvas"/>
+
+        <!-- optional zoom slider (kept for tuning only) -->
+        <Slider Name="XZoomSlider"
+                Minimum="1"
+                Maximum="10"
+                Value="5"
+                Height="20"
+                VerticalAlignment="Bottom"
+                Margin="10"/>
+    </Grid>
+</Window>
